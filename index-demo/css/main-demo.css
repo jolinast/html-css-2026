@@ -1,0 +1,179 @@
+
+:root {
+    --navy: #000080;
+    --blue: #4db8ff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    border-top: 8px solid var(--navy);
+    text-align: center;
+}
+
+#header-logo {
+    padding: 15px 0;
+}
+
+#header-logo img {
+    max-width: 100%;
+}
+
+#shortcut-links ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.25em;
+    margin: 0;
+    padding: 10px 0 15px 0;
+}
+
+#shortcut-links li {
+    margin: 0;
+}
+
+#shortcut-links .fa-li {
+    position: static;
+    width: auto;
+    margin-right: 0.4em;
+}
+
+#shortcut-links a {
+    color: var(--navy);
+    font-size: 0.9em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#shortcut-links i {
+    color: var(--blue);
+}
+
+
+#contact-mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--navy);
+}
+
+#contact-mobile-nav .btn {
+    background-color: var(--blue);
+    color: white;
+    font-weight: bold;
+    padding: 18px 25px;
+    text-decoration: none;
+}
+
+#menu-checkbox {
+    display: none;
+}
+
+#menu-toggle {
+    color: white;
+    cursor: pointer;
+    padding: 0 20px;
+}
+
+#main-menu {
+    display: none;
+}
+
+#menu-checkbox:checked ~ #main-menu {
+    display: block;
+}
+
+#menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0 20px;
+}
+
+#main-menu {
+    display: none;
+}
+
+#main-menu.open {
+    display: block;
+}
+
+#main-menu li {
+    border-bottom: 1px solid #ccc;
+}
+
+#main-menu a {
+    display: block;
+    padding: 20px;
+    text-align: left;
+    color: var(--navy);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#main-menu .active a {
+    color: var(--blue);
+}
+
+#about-us h4 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.25em;
+    padding: 20px 0;
+    color: var(--navy);
+}
+
+#about-us h2 {
+    font-size: 2em;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.25em;
+}
+
+#about-us h2 + img {
+    width: 100px;
+    height: 5px;
+    margin: 15px 0;
+    line-height: 1.5em;
+}
+
+#about-cards {
+    padding: 10px;
+}
+
+#about-cards article {
+    margin: 20px 0;
+}
+
+#about-cards .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5em;
+}
+
+#about-cards .card-header i {
+    color: var(--blue);
+    font-size: 1.5em;
+}
+
+#about-cards .card-header h3 {
+    font-size: 1.25em;
+    font-weight: 400;
+}
+
+#about-cards blockquote {
+    padding: 10px 0;
+    border-left: 1px solid #ccc;
+    margin: 15px 0 0 15px;
+    padding-left: 20px;
+    color: #888;
+    font-size: 1.1em;
+    line-height: 1.25em;
+} 
