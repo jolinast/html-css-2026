@@ -8,6 +8,47 @@
     box-sizing: border-box;
 }
 
+#jumbotron-text {
+  background-image: url("../images/bkg-pattern.jpg");
+  padding: 1.5em;
+}
+
+#jumbotron-text h1 {
+  color: var(--blue);
+  font-size: 2.5em;
+  font-weight: 400; /* Don't make the text bold */
+  line-height: 1.25em;
+}
+
+#jumbotron-text p {
+  color: 
+white;
+  margin: 1em 0; /* Add space above and below paragraph */
+  line-height: 1.25em;
+}
+
+#jumbotron-image {
+    background-image: url(::/demo-pictures/hero-building.jpeg)
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40vh;
+}
+
+.btn {
+    background-color: var(--color-accent);
+    color: 
+white;
+    padding: 1em 1.5em; 
+    display: inline-block; 
+    text-decoration:none;
+    font-weight: 700;
+}
+
+.btn:hover {
+    background-color: var(--color-accent-light);
+   }
+
 body {
     font-family: Arial, sans-serif;
 }
