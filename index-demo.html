@@ -1,62 +1,159 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lynch Dallas Legal | Cedar Rapids, IA</title>
-    <link rel="icon" href="demo-images/gavel-solid-full.svg" />
+    <title>Home | Lynch Dallas Legal | Cedar Rapids, IA</title>
+    <link rel="icon" href="images/gavel-solid-full.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/main-demo.css" />
   </head>
   <body>
     <header>
-      <section id="logo">
-        <a href="demo-images/gavel-solid-full.svg"> 
-         <img src="demo-images/lynch-dallas-logo.png" alt="Lynch Dallas Legal Logo" width="200">
+      <div id="header-logo">
+        <a href="index-demo.html">
+          <img
+            src="images/lynch-dallas-logo.png"
+            alt="Lynch Dallas Legal Logo"
+            width="200"
+          />
         </a>
-    </section>
-      <nav id="main-menu"></nav>
-       <ul>
-         <li><a href="index-demo.html">Home</a></li>
-        <li><a href="index-demo.html">Our Firm</a></li>
-        <li><a href="index-demo.html">Attorneys</a></li>
-        <li><a href="index-demo.html">Practice Areas</a></li>
-        <li><a href="index-demo.html">News &amp; Announcements</a></li>
-        <li><a href="index-demo.html">IPIB Training</a></li>
-        <li><a href="index-demo.html">Contact</a></li>
-       </ul>
+      </div>
+      <nav id="shortcut-links">
+        <ul class="fa-ul">
+          <li>
+            <a href="#"
+              ><span class="fa-li"><i class="fa-regular fa-credit-card"></i></span
+              >Pay Online</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><span class="fa-li"><i class="fa-solid fa-location-dot"></i></span
+              >Directions</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><span class="fa-li"><i class="fa-solid fa-phone"></i></span
+              >319-365-9101</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <input type="checkbox" id="menu-checkbox" />
+      <nav id="contact-mobile-nav">
+        <a href="#" class="btn">Contact Us</a>
+        <label for="menu-checkbox" id="menu-toggle" aria-label="Open menu">
+          <i class="fa-solid fa-bars fa-2xl"></i>
+        </label>
+      </nav>
+      <nav id="main-menu">
+        <ul>
+          <li class="active"><a href="index-demo.html">Home</a></li>
+          <li><a href="#">Our Firm</a></li>
+          <li><a href="#">Attorneys</a></li>
+          <li><a href="#">Practice Areas</a></li>
+          <li><a href="#">News &amp; Announcements</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </header>
+
     <main>
       <section id="hero">
-        <div id="hero-image"></div>
-            <img src="demo-images/hero-building.jpg" alt="The front of the Lynch Dallas Legal office in downtown Cedar Rapids, IA"
-        <div id="hero-text"></div>
-      </section>
-      <section id="benefits">
-        <div id="benefits-text"></div>
-        <div id="benefits-articles">
-            <!-- <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
-            <article></article> -->
+        <div id="hero-image">
+          <img
+            src="images/hero-building.jpg"
+            alt="The front of the Lynch Dallas Legal office in downtown Cedar Rapids, IA"
+          />
+        </div>
+        <div id="hero-text">
+          <h1>Practical. Experienced. Results.</h1>
         </div>
       </section>
+
       <section id="about-us">
-        <div id="about-us-image"></div>
-        <div id="about-us-text"></div>
+        <h4>About Lynch Dallas Legal</h4>
+        <h2>We deliver. Thoughtful Strategy. Outstanding Results.</h2>
+        <img src="images/after.png" alt="Decorative underline" />
+        <p>
+          Lynch Dallas: Navigating the legal horizons for your city, your
+          county, your business, your employees - OUR EXPERTISE.
+        </p>
+
+        <div id="about-cards">
+          <article>
+            <div class="card-header">
+              <i class="fa-regular fa-lightbulb"></i>
+              <h3>Experience</h3>
+            </div>
+            <blockquote>
+              Lynch Dallas Legal was founded in 1926, making it one of Iowa's
+              oldest law firms.
+            </blockquote>
+          </article>
+          <article>
+            <div class="card-header">
+              <i class="fa-regular fa-handshake"></i>
+              <h3>Commitment</h3>
+            </div>
+            <blockquote>
+              Lynch Dallas Legal has a tradition of commitment to our clients,
+              our community, and the legal profession.
+            </blockquote>
+          </article>
+          <article>
+            <div class="card-header">
+              <i class="fa-solid fa-gavel"></i>
+              <h3>Results</h3>
+            </div>
+            <blockquote>
+              Lynch Dallas Legal strives to achieve the best results for our
+              clients through careful problem-solving and considering novel
+              approaches.
+            </blockquote>
+          </article>
+          <article>
+            <div class="card-header">
+              <i class="fa-solid fa-comments"></i>
+              <h3>Litigation</h3>
+            </div>
+            <blockquote>
+              Lynch Dallas Legal fosters strong litigation skills in its
+              attorneys to manage cases from district court to various state
+              and federal courts of appeal.
+            </blockquote>
+          </article>
+          <article>
+            <div class="card-header">
+              <i class="fa-solid fa-key"></i>
+              <h3>Principles</h3>
+            </div>
+            <blockquote>
+              Lynch Dallas Legal upholds the integrity, reliability, and
+              trustworthiness of the legal profession.
+            </blockquote>
+          </article>
+          <article>
+            <div class="card-header">
+              <i class="fa-solid fa-shield-halved"></i>
+              <h3>Devoted</h3>
+            </div>
+            <blockquote>
+              Lynch Dallas Legal maintains strong connections to its clients to
+              form lasting relationships.
+            </blockquote>
+          </article>
+        </div>
       </section>
     </main>
-    <footer>
-      <section id="consultation">
-        <div id="consulation-text"></div>
-        <div id="consultation-links"></div>
-      </section>
-      <section id="contact">
-        <div id="contact-address"></div>
-        <div id="contact-phone-email"></div>
-        <div id="contact-social-media"></div>
-        <div id="contact-about-us"></div>
-      </section>
-    <section id="copyright">Copyright &copy; <script>document.write(new Date().getFullYear())</script> Lynch Dallas, P.C. Attorneys At Law. All Rights Reserved. Web Application by <a href="https://www.informaticsinc.com/" target="_blank" ></a>Inc</a> | Privacy Policy 172.26.0.88</section>    </footer>
   </body>
 </html>

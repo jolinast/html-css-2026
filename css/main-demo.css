@@ -1,0 +1,193 @@
+:root {
+  --navy: #000080;
+  --blue: #4db8ff;
+  --gray: #888;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* ---------- Header (mobile) ---------- */
+header {
+  border-top: 8px solid var(--navy);
+  text-align: center;
+}
+
+#header-logo {
+  padding: 15px 0;
+}
+
+#header-logo img {
+  max-width: 100%;
+}
+
+#shortcut-links ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.25em;
+  margin: 0;
+  padding: 10px 0 15px 0;
+}
+
+#shortcut-links .fa-li {
+  position: static;
+  width: auto;
+  margin-right: 0.4em;
+}
+
+#shortcut-links a {
+  color: var(--navy);
+  font-size: 0.9em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#shortcut-links i {
+  color: var(--blue);
+}
+
+#contact-mobile-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--navy);
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--blue);
+  color: white;
+  font-weight: bold;
+  padding: 18px 25px;
+  text-decoration: none;
+}
+
+#menu-checkbox {
+  display: none;
+}
+
+#menu-toggle {
+  color: white;
+  cursor: pointer;
+  padding: 0 20px;
+}
+
+/* Menu is hidden until the hamburger (checkbox) is checked */
+#main-menu {
+  display: none;
+}
+
+#menu-checkbox:checked ~ #main-menu {
+  display: block;
+}
+
+#main-menu li {
+  border-bottom: 1px solid #ccc;
+}
+
+#main-menu a {
+  display: block;
+  padding: 20px;
+  text-align: left;
+  color: var(--navy);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#main-menu .active a {
+  color: var(--blue);
+}
+
+/* ---------- Hero / jumbotron ---------- */
+#hero-image img {
+  display: block;
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+#hero-text {
+  background-image: url("../images/bkg-pattern.jpg");
+  background-size: cover;
+  padding: 1.5em;
+}
+
+#hero-text h1 {
+  color: var(--blue);
+  font-size: 2.5em;
+  font-weight: 400; /* not bold */
+  line-height: 1.25em;
+}
+
+/* ---------- About us ---------- */
+#about-us {
+  padding: 0 15px 20px;
+}
+
+#about-us h4 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.25em;
+  padding: 20px 0;
+  color: var(--navy);
+}
+
+#about-us h2 {
+  font-size: 2em;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.25em;
+}
+
+#about-us h2 + img {
+  display: block;
+  width: 100px;
+  height: 5px;
+  margin: 15px auto;
+}
+
+#about-us > p {
+  text-align: center;
+  color: var(--gray);
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+#about-cards {
+  padding: 10px 0;
+}
+
+#about-cards article {
+  margin: 20px 0;
+}
+
+#about-cards .card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+#about-cards .card-header i {
+  color: var(--blue);
+  font-size: 1.5em;
+}
+
+#about-cards .card-header h3 {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+#about-cards blockquote {
+  margin: 15px 0 0 15px;
+  padding: 10px 0 10px 20px;
+  border-left: 1px solid #ccc;
+  color: var(--gray);
+  font-size: 1.1em;
+  line-height: 1.25em;
+}
