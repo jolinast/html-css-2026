@@ -1,0 +1,199 @@
+:root {
+    --burgundy: #411024;
+    --white: #ffffff;
+    --soft: #e9cfd9;
+    --line: rgba(255, 255, 255, 0.55);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--burgundy);
+    color: var(--white);
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+main {
+    padding: 0 16px 48px;
+}
+
+main p {
+    max-width: 900px;
+    color: var(--soft);
+}
+
+
+#header-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 12px;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#logo img {
+    width: 60px;
+    height: auto;
+}
+
+#clinic-name {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#header-contact {
+    color: var(--white);
+    font-size: 14px;
+    text-align: center;
+}
+
+#header-contact p {
+    margin: 2px 0;
+}
+
+/* ===== Balken mit Button und Hamburger (nur mobil) ===== */
+#contact-mobile-nav {
+    display: flex;
+    min-height: 62px;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid var(--line);
+    border-bottom: 2px solid var(--line);
+    padding: 0 8px;
+}
+
+#contact-mobile-nav .header-btn {
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    padding: 0 24px;
+    background: var(--white);
+    color: var(--burgundy);
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#mobile-nav {
+    display: flex;
+    min-width: 64px;
+    min-height: 48px;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    cursor: pointer;
+}
+
+/* ===== Aufklappmenü ===== */
+#menu-checkbox {
+    display: none;
+}
+
+#main-menu {
+    display: none;
+}
+
+#menu-checkbox:checked ~ #main-menu {
+    display: block;
+}
+
+#main-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: var(--burgundy);
+}
+
+#main-menu li a {
+    display: block;
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--line);
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#main-menu li.active a {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 8px;
+}
+
+#mt-vernon-building {
+    width: 100%;
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+#mt-vernon-building img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 3px solid var(--white);
+}
+
+/* ===== Desktop-Ansicht: ganz unten ===== */
+@media (min-width: 768px) {
+    #header-top {
+        flex-direction: row;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    #clinic-name {
+        font-size: 26px;
+    }
+
+    #header-contact {
+        padding-left: 24px;
+        border-left: 2px solid var(--line);
+        font-size: 18px;
+        text-align: left;
+    }
+
+    #contact-mobile-nav {
+        display: none;
+    }
+
+    #main-menu {
+        display: block;
+        border-top: 2px solid var(--line);
+        border-bottom: 2px solid var(--line);
+    }
+
+    #main-menu ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #main-menu li a {
+        padding: 14px 0;
+        border-bottom: none;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    main {
+        padding: 0 24px 72px;
+    }
+}
